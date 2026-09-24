@@ -24,7 +24,7 @@ function Navbar() {
                         </Link>
 
                     </div>
-                    <Link to="/"><h1 className="  text-2xl font-bold font-['Playfair_Display'] cursor-pointer">ShopWithSamy<span className="text-pink-400 " >♡</span></h1> </Link>
+                    <Link to="/"><h1 className="  text-2xl font-bold font-['Playfair_Display'] cursor-pointer">ShopWithSamy <span className="text-pink-400 " >♡</span></h1> </Link>
 
 
                     {/* right nav  */}
