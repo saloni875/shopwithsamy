@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Link } from "react-router-dom"
-import { ShoppingCart, Heart, X, LogOut, Home, Info, Phone, LogIn } from "lucide-react"
+import { Link } from "react-router-dom";
+import { ShoppingCart, Heart, X, LogOut, Home, Info, Phone, LogIn } from "lucide-react";
 
 
 function Navbar() {
@@ -12,7 +12,7 @@ function Navbar() {
 
     return (
         <>
-            <nav className="nav-bar flex justify-between items-center bg-pink-300 h-16 px-4  fixed top-0 left-0 right-0 w-full z-50 shadow-md mx-auto sm:px-6 sm:py-4">
+            <nav className="nav-bar flex justify-between items-center bg-gradient-to-r from-pink-300 via-white to-pink-400 bg-pink-300 h-16 px-4  fixed top-0 left-0 right-0 w-full z-50 shadow-md mx-auto sm:px-6 sm:py-4">
                 {/* for desktop */}
                 <div className="hidden lg:flex w-full flex justify-between items-center ">
 

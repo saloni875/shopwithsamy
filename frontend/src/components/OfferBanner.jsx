@@ -20,6 +20,19 @@ function OfferBanner (){
                 <span className="mx-8 whitespace-nowrap">
                     🤍 Free shipping on orders above ₹599 🤍
                 </span>
+
+                
+                <span className="mx-8 whitespace-nowrap">
+                    🤍 Free shipping on orders above ₹599 🤍
+                </span>
+
+                <span className="mx-8 whitespace-nowrap">
+                    🤍 Free shipping on orders above ₹599 🤍
+                </span>
+
+                <span className="mx-8 whitespace-nowrap">
+                    🤍 Free shipping on orders above ₹599 🤍
+                </span>
                 
 
                 
