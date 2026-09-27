@@ -32,7 +32,7 @@ function Home() {
             <Review/>
 
 
-            <div className="flex flex-col items-center justify-center w-[90%] max-w-sm  rounded-2xl shadow-md bg-gradient-to-r from-pink-200 to-white border border-pink-200 mt-8 p-4 ">
+            <div className="flex flex-col items-center justify-center w-[90%] max-w-sm  rounded-2xl mb-4 shadow-md bg-gradient-to-r from-pink-200 to-white border border-pink-200 mt-8 p-4 ">
                 <a href="https://www.instagram.com/shopwithsamy" className="text-xl font-bold text-center mt-4 text-pink-400 mt-4" style={{ fontFamily: "Dancing Script, cursive" }}>@ShopWithSamy</a>
 
                 <h3 className="text-3xl font-bold text-center font-['Playfair_Display']">Come Say Hi on Instagram</h3>
