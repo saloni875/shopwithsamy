@@ -1,9 +1,10 @@
-
+import { Link } from "react-router-dom";
 
 function CategoryItem({ category }) {
 
     return (
         <>
+        <Link to={`/category/${category.name}`} >
             <div className="overflow-hidden rounded-2xl   w-full p-2 ">
                 <div className="w-full  cursor-pointer aspect-square ">
                     <img src={category.imageUrl} alt={category.name} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 rounded-2xl p-1" />
@@ -12,6 +13,7 @@ function CategoryItem({ category }) {
 
 
             </div>
+        </Link>
 
         </>
     );

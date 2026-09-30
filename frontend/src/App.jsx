@@ -8,6 +8,8 @@ import Login from "./pages/Login";
 import Wishlist from "./pages/Wishlist";
 import Cart from "./pages/Cart";
 import Contact from "./pages/Contact";
+import CategoryProduct from "./pages/CategoryProduct";
+
 
 function App() {
 
@@ -23,6 +25,7 @@ function App() {
       <Route path="/signup" element={<SignUp/>} />
       <Route path="/login" element={<Login/>} /> 
       <Route path="/contact" element={<Contact/>} />
+      <Route path="/category/:categoryName" element={<CategoryProduct/>} />  
       </Routes>      
       
       <Footer />
