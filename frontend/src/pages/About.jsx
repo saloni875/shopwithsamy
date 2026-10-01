@@ -12,12 +12,12 @@ function About() {
     return (
         <>
 
-            <div className="w-[94%] sm:w-[90%] lg:w-[85%] max-w-6xl mx-auto py-6 sm:py-6 lg:py-6 px-3 sm:px-4 lg:px-8 mt-15">
+            <div className="w-[94%] sm:w-[90%] lg:w-[85%] max-w-6xl mx-auto py-3 sm:py-6 lg:py-6 px-3 sm:px-4 lg:px-8 mt-15">
 
                 <div className="w-[75%] mx-auto">
                     <h3 className=" text-2xl font-bold text-center mt-4 text-pink-400 " style={{ fontFamily: "Dancing Script, cursive" }}>Out little story</h3>
 
-                    <p className="text-[1.5rem] font-bold text-center font-['Playfair_Display'] mb-2">ShopWithSamy started as a tiny idea and a big love for cute, handmade things. Every charm, clip and bracelet is chosen and packed by hand, with a lot of care and a little bit of magic. We're a small business - which means every single order genuinely means the world to us. Thank you for being here, and for being part of our little story. ♡</p></div>
+                    <p className="text-xl lg:text-2xl font-bold text-center font-['Playfair_Display'] mb-2">ShopWithSamy started as a tiny idea and a big love for cute, handmade things. Every charm, clip and bracelet is chosen and packed by hand, with a lot of care and a little bit of magic. We're a small business - which means every single order genuinely means the world to us. Thank you for being here, and for being part of our little story. ♡</p></div>
 
 
                 <div className="w-full max-w-sm mx-auto bg-gradient-to-r from-pink-200 rounded-2xl shadow-md p-6 sm:p-8 text-center m-4 ">

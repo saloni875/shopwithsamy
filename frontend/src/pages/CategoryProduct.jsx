@@ -1,4 +1,6 @@
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
+
 import ProductCard from "../components/ProductCard";
 
 
@@ -10,7 +12,7 @@ function CategoryProduct() {
     const products = [
         {
             id: 1,
-            name:  "cute phone charm",
+            name: "cute phone charm",
             price: 299,
             category: "Phone Charm",
             image: "/img.png"
@@ -50,10 +52,10 @@ function CategoryProduct() {
             category: "Jewelry",
             image: "..."
         }
-         ,
-             {
+        ,
+        {
             id: 7,
-            name:  "cute phone charm",
+            name: "cute phone charm",
             price: 299,
             category: "Phone Charm",
             image: "..."
@@ -106,16 +108,24 @@ function CategoryProduct() {
                 <h1 className="text-4xl font-bold text-center font-['Playfair_Display']">{categoryName}</h1>
                 <p className="text-2xl font-bold text-center  text-pink-400 4 m-4" style={{ fontFamily: "Dancing Script, cursive" }}> soon peoduct will be added</p>
 
-                <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                    {categoryProducts.map((product) =>(
-                        <ProductCard 
-                        key={product.id}
-                        name={product.name}
-                        price={product.price}
-                        image={product.image}/>
+                <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-6 gap-4">
+                    {categoryProducts.map((product) => (
+                        <ProductCard
+                            key={product.id}
+                            name={product.name}
+                            price={product.price}
+                            image={product.image} />
 
                     ))}
                 </div>
+
+                <Link to="/category">
+                    <div className="w-full h-[70px] lg:h-[90px] items-center  bg-pink-500 my-4 mt-4 flex justify-center ">
+                        <p className="text-[1rem] lg:text-2xl text-center text-white font-['Playfair_Display'] cursor-pointer m-4 ">
+                            ← Back To Category
+                        </p>
+                    </div>
+                </Link>
             </div>
 
         </>

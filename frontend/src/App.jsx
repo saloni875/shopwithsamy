@@ -9,6 +9,8 @@ import Wishlist from "./pages/Wishlist";
 import Cart from "./pages/Cart";
 import Contact from "./pages/Contact";
 import CategoryProduct from "./pages/CategoryProduct";
+import CategoryPage from "./pages/CatrgoryPage";
+import ProductDetails from "./pages/ProductDetails";
 
 
 function App() {
@@ -26,7 +28,9 @@ function App() {
       <Route path="/login" element={<Login/>} /> 
       <Route path="/contact" element={<Contact/>} />
       <Route path="/category/:categoryName" element={<CategoryProduct/>} />  
-      </Routes>      
+      <Route path="/category" element={<CategoryPage/>} />
+      <Route path="/product/:id" element={<ProductDetails/>} />
+      </Routes>       
       
       <Footer />
     </>

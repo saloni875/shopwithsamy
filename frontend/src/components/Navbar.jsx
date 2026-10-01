@@ -29,11 +29,11 @@ function Navbar() {
 
                     {/* right nav  */}
                     <div className="nav-bar-right flex items-center gap-6">
-                        <Link to="/" className="text-lg font-semibold hover:text-pink-400 transition-colors duration-300 relative group font-medium cursor-pointer">Home
+                        <Link to="/" className="text-lg font-semibold hover:text-pink-600 transition-colors duration-300 relative group font-medium cursor-pointer">Home
                             <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-pink-500 transition-all duration-500 group-hover:w-full"></span>
                         </Link>
 
-                        <Link to="/cart" className="text-lg font-semibold hover:text-pink-400 transition-colors duration-300 ml-4 relative group font-medium">
+                        <Link to="/cart" className="text-lg font-semibold hover:text-pink-600 transition-colors duration-300 ml-4 relative group font-medium">
                             <ShoppingCart
                                 className="inline-block mr-1"
                                 size={22}
@@ -41,7 +41,7 @@ function Navbar() {
                             <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-pink-500 transition-all duration-500 group-hover:w-full"></span>
                         </Link>
 
-                        <Link to="/wishlist" className="text-lg font-semibold hover:text-pink-400 transition-colors duration-300 ml-4 relative group font-medium">
+                        <Link to="/wishlist" className="text-lg font-semibold hover:text-pink-600 transition-colors duration-300 ml-4 relative group font-medium">
                             <Heart
                                 className="inline-block mr-1"
                                 size={22}
@@ -49,11 +49,11 @@ function Navbar() {
                             <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-pink-500 transition-all duration-500 group-hover:w-full"></span>
                         </Link>
 
-                        <Link to="/signup" className="text-lg font-semibold hover:text-pink-400 transition-colors duration-300 ml-4 relative group font-medium">Signup
+                        <Link to="/signup" className="text-lg font-semibold hover:text-pink-600 transition-colors duration-300 ml-4 relative group font-medium">Signup
                             <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-pink-500 transition-all duration-500 group-hover:w-full"></span>
                         </Link>
 
-                        <Link to="/login" className="text-lg font-semibold hover:text-pink-400 transition-colors duration-300 ml-4 relative group font-medium">Login
+                        <Link to="/login" className="text-lg font-semibold hover:text-pink-600 transition-colors duration-300 ml-4 relative group font-medium">Login
                             <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-pink-500 transition-all duration-500 group-hover:w-full"></span>
                         </Link>
 
