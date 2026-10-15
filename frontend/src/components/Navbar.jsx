@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import { ShoppingCart, Heart, X, LogOut, Home, Info, Phone, LogIn } from "lucide-react";
 
 
+
+
+
 function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -89,8 +92,8 @@ function Navbar() {
 
                         <div className="border-t my-2 border-gray-300 dark:border-gray-700"></div>
 
-                    <Link to="/login" onClick={() => setIsMenuOpen(false)} className="px-5 py-3 flex items-center gap-3 hover:bg-pink-200 cursor-pointer">
-                        <LogIn size={20} /><span>Login</span>
+                    <Link to="/signup" onClick={() => setIsMenuOpen(false)} className="px-5 py-3 flex items-center gap-3 hover:bg-pink-200 cursor-pointer">
+                        <LogIn size={20} /><span>Sign Up</span>
                     </Link>
 
                         
