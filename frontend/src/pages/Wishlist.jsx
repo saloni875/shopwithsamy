@@ -3,7 +3,7 @@ function Wishlist(){
     return(
 
         <>
-        <p>wishlist will be here </p>
+        <p className="mt-20">wishlist will be here </p>
         </>
     );
 }
