@@ -3,7 +3,7 @@ import { ShoppingCart } from "lucide-react";
 import { Link } from "react-router-dom";
 
 
-function Cart({cartItems=[]}) {
+function Cart({cartItems=[], removeFromCart}) {
 
     return(
         <div className="cart-container flex flex-col items-center justify-center  mt-20">
@@ -29,9 +29,9 @@ function Cart({cartItems=[]}) {
                     </Link>
                 </div>
             ) : (
-                <div>
+                <div className=" grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 w-[90%] max-w-6xl mt-8">
                     {cartItems.map((item) => (
-                        <CartItem key={item.id} item={item} />
+                        <CartItem key={`${item.id}-${item.selectedColor}`} item={item} removeFromCart={removeFromCart} />
                     ))}
                 </div>
             )}
