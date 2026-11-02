@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import ProductCard from "../components/ProductCard";
 
 
-function CategoryProduct() {
+function CategoryProduct({ wishlistItems = [], toggleWishlist }) {
 
     const { categoryName } = useParams();
     console.log(categoryName);
@@ -65,7 +65,7 @@ function CategoryProduct() {
             name: "Cute Hair Clip",
             price: 199,
             category: "Hair Accessories",
-            image: "..."
+            image   : "..."
         },
         {
             id: 9,
@@ -76,7 +76,7 @@ function CategoryProduct() {
         },
         {
             id: 10,
-            name: "Phandmade stuff",
+            name: "Handmade stuff",
             price: 249,
             category: "Handmade",
             image: "..."
@@ -115,7 +115,10 @@ function CategoryProduct() {
                             id={product.id}
                             name={product.name}
                             price={product.price}
-                            image={product.image} />
+                            image={product.images[0]} 
+                            wishlistItems={wishlistItems}
+                            toggleWishlist={toggleWishlist}
+                        />
 
                     ))}
                 </div>
