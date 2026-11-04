@@ -13,6 +13,7 @@ import CategoryProduct from "./pages/CategoryProduct";
 import CategoryPage from "./pages/CatrgoryPage"; // <-- check spelling, should be CategoryPage
 import ProductDetails from "./pages/ProductDetails";
 
+
 function App() {
   const [cartItems, setCartItems] = useState([]);
   const [wishlistItems, setWishlistItems] = useState([]);
@@ -73,6 +74,8 @@ function App() {
           path="/product/:id"
           element={<ProductDetails addToCart={addToCart} toggleWishlist={toggleWishlist} wishlistItems={wishlistItems} />}
         />
+        <Route path="*" element={<h1 className="text-center mt-20 text-3xl font-bold">404 - Page Not Found</h1>} />
+        
       </Routes>
       <Footer />
     </>

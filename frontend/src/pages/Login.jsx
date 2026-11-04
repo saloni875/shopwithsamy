@@ -13,7 +13,7 @@ function Login(){
             <h1 className="text-4xl font-bold text-center font-['Playfair_Display']">Login to ShopWithSamy</h1>
             <form className="flex flex-col  justify-center w-[90%] max-w-sm  rounded-2xl mb-4 shadow-md bg-pink-50  border border-pink-200 mt-8 p-4 ">
                 <div className="mb-4">
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+                    <label htmlFor="email" className="block text-[1.1rem] font-medium text-pink-600">
                         Email:
                     </label>
                     <input 
@@ -25,7 +25,7 @@ function Login(){
                     />
                 </div>
                 <div className="mb-4">
-                    <label htmlFor="password" className="block text-sm font-medium text-gray-700">
+                    <label htmlFor="password" className="block text-[1.1rem] font-medium text-pink-600">
                         Password:
                     </label>
                     <input 
