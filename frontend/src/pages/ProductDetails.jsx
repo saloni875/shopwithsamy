@@ -15,17 +15,23 @@ function ProductDetails({ addToCart }) {
         return <h2 className="h-screen flex items-center justify-center">Product not found</h2>;
     }
 
-    const handleBuyNow = () => {
+    const handleAddToCart = () => {
         addToCart(product, selectedColor);
-        navigate('/cart'); // Navigate to the cart page after adding the product
+         // Navigate to the cart page after adding the product
     }
+
+    const handleBuyNow = () => {
+        navigate("/checkout", { state: { 
+            items: [{ ...product, selectedColor, quantity: 1 }],
+        } });
+    };
 
 
 
     return (
         <div className="bg-white mt-20 w-full max-w-6xl mx-auto lg:flex lg:gap-10 lg:p-6">
 
-            {/* --- LEFT: IMAGES --- */}
+            {/* LEFT SECTION*/}
             <div className="lg:w-1/2 flex flex-col gap-2 items-center">
                 <img
                     src={selectImage}
@@ -34,8 +40,7 @@ function ProductDetails({ addToCart }) {
                 />
 
                 {/* Thumbnails - FIXED for 10+ images */}
-                <div className="flex gap-2.5 overflow-x-auto w-full px-3 mt-3
-                                scrollbar-hide scroll-smooth pb-2">
+                <div className="flex gap-2.5 overflow-x-auto w-full px-3 mt-3 pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
                     {product.images.map((image, index) => (
                         <img
                             key={index}
@@ -49,7 +54,7 @@ function ProductDetails({ addToCart }) {
                 </div>
             </div>
 
-            {/* --- RIGHT: INFO --- */}
+            {/*  RIGHT SECTION */}
             <div className="lg:w-1/2 px-3 lg:px-0">
                 <div className="flex flex-col items-center lg:items-start mt-4 lg:mt-0">
                     <h2 className="text-2xl font-semibold font-['Playfair_Display']">{product.name}</h2>
@@ -113,7 +118,7 @@ function ProductDetails({ addToCart }) {
                 {/* Buttons */}
                 <div className="flex gap-3 mt-8 sticky bottom-2 bg-white p-2 lg:p-0">
                     <button
-                        onClick={handleBuyNow}
+                        onClick={handleAddToCart}
                         className="flex-1 rounded-full bg-pink-500 text-white py-3 font-bold hover:bg-pink-600 transition"
                     >
                         Add to Cart

@@ -47,13 +47,6 @@ function SignUP(){
 
 
 
-
-
-
-
-
-
-
             </form>
         </div>
     );

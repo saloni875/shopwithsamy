@@ -107,12 +107,12 @@ function Contact() {
                                 <div>
                                     <h3 className="font-bold">Support Hours</h3>
                                     <p className="text-gray-500 text-sm mt-1">
-                                        Monday – Saturday
+                                        Monday - Saturday
                                     </p>
                                 </div>
                             </div>
 
-                            <div className="flex items-start gap-4">
+                            {/* <div className="flex items-start gap-4">
                                 <div className="bg-pink-100 p-3 rounded-xl">
                                     <Instagram className="text-pink-600" />
                                 </div>
@@ -123,7 +123,7 @@ function Contact() {
                                         Find us on Instagram for new collections.
                                     </p>
                                 </div>
-                            </div>
+                            </div> */}
 
                         </div>
                     </div>
@@ -231,7 +231,7 @@ function Contact() {
                 </p>
 
                 <a
-                    href="/#faq"
+                    href="/"
                     className="inline-block mt-5 text-pink-600 font-semibold underline"
                 >
                     Visit Our FAQ →

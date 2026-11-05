@@ -1,6 +1,8 @@
 import { Trash } from "lucide-react";
 function CartItem({ item, removeFromCart }) {
     return (
+        <>
+            
         <div key={`${item.id}-${item.selectedColor}`} className="cart-items flex flex-col w-full max-w-3xl p-4 m-4  border border-pink-400 rounded-xl" >
             <img src={item.images[0]} alt={item.name} className="w-full h-full object-cover rounded-xl " />
             <div>
@@ -19,6 +21,7 @@ function CartItem({ item, removeFromCart }) {
                 </div>
             </div>
         </div>
+        </>
     );
 }
 

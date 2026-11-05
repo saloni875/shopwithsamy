@@ -12,6 +12,7 @@ import Contact from "./pages/Contact";
 import CategoryProduct from "./pages/CategoryProduct";
 import CategoryPage from "./pages/CatrgoryPage"; // <-- check spelling, should be CategoryPage
 import ProductDetails from "./pages/ProductDetails";
+import Checkout from "./pages/Checkout";
 
 
 function App() {
@@ -70,6 +71,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/category/:categoryName" element={<CategoryProduct wishlistItems={wishlistItems} toggleWishlist={toggleWishlist} />} />
         <Route path="/category" element={<CategoryPage />} />
+        <Route path="/checkout" element={<Checkout  />} />
         <Route
           path="/product/:id"
           element={<ProductDetails addToCart={addToCart} toggleWishlist={toggleWishlist} wishlistItems={wishlistItems} />}
