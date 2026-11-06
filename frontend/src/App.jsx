@@ -10,7 +10,7 @@ import Wishlist from "./pages/Wishlist";
 import Cart from "./pages/Cart";
 import Contact from "./pages/Contact";
 import CategoryProduct from "./pages/CategoryProduct";
-import CategoryPage from "./pages/CatrgoryPage"; // <-- check spelling, should be CategoryPage
+import CategoryPage from "./pages/CatrgoryPage"; 
 import ProductDetails from "./pages/ProductDetails";
 import Checkout from "./pages/Checkout";
 
